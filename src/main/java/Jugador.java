@@ -12,7 +12,7 @@ import lombok.Setter;
 @Builder
 public class Jugador {
     /**
-     * Saldo disponible del jugador en el momento
+     * Saldo disponible del jugador en el momento fijo
      */
     @Getter
     @Setter
@@ -26,7 +26,7 @@ public class Jugador {
     @Setter
     private int apuesta;
 
-    
+
 
 
 
