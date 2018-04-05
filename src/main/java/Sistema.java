@@ -8,13 +8,11 @@ import java.util.Date;
  */
 public class Sistema {
 
-    private Tragamoneda machine;
+    private static Tragamoneda machine;
 
     public static void main(String[] args){
+        machine = Tragamoneda.builder().build();
+        machine.iniciarJuego();
 
-        LocalDateTime date = LocalDateTime.now();
-
-        System.out.println(date.getHour());
-        System.out.println(date.getMinute());
     }
 }
