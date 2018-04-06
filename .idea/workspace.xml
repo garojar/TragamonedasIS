@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e6146213-b94c-4f45-ad65-d7672e16b8a1" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Jugador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Jugador.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Tragamoneda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tragamoneda.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -22,25 +23,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Tragamoneda.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Tragamoneda.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Tragamoneda.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="195" lean-forward="true" selection-start-line="195" selection-end-line="195" />
+            <state relative-caret-position="2745">
+              <caret line="183" column="66" selection-start-line="183" selection-start-column="66" selection-end-line="183" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#generarPremio#0;class#Tragamoneda#0" />
-                <element signature="method#validarInput#0;class#Tragamoneda#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Sistema.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Sistema.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Sistema.java">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret lean-forward="true" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -51,8 +49,8 @@
       <file leaf-file-name="Jugador.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Jugador.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
+            <state relative-caret-position="308">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -63,7 +61,7 @@
       <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
+            <state relative-caret-position="-7">
               <caret line="14" column="74" selection-start-line="14" selection-start-column="74" selection-end-line="14" selection-end-column="74" />
             </state>
           </provider>
@@ -379,9 +377,9 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/java/SIstema.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/main/java/Jugador.java" />
         <option value="$PROJECT_DIR$/src/main/java/Sistema.java" />
         <option value="$PROJECT_DIR$/src/main/java/Tragamoneda.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Jugador.java" />
       </list>
     </option>
   </component>
@@ -441,7 +439,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -519,7 +517,7 @@
       <option name="presentableId" value="Default" />
       <updated>1522941569717</updated>
       <workItem from="1522941573452" duration="2773000" />
-      <workItem from="1522944542318" duration="9280000" />
+      <workItem from="1522944542318" duration="11367000" />
     </task>
     <task id="LOCAL-00001" summary="Added methods Tragamoneda&#10;&#10;*Se completaron las funciones de los siguientes metodos&#10;  -iniciarJuego&#10;  -generarRueda&#10;  -desplegarRueda&#10;  -generarPremio&#10; *Cambios en Tragamoneda:&#10;  -Added @Builder &#10;  -Added atributo jugador &#10;  -Added contador de asteriscos &#10;  -variables numRandom ha sido cambiado a un arreglo&#10; *Cambios en Sistema:&#10;  -Build de Tragamoneda&#10;  -inicio de ciclo de juego(iniciarJuego)">
       <created>1522964999204</created>
@@ -528,11 +526,18 @@
       <option name="project" value="LOCAL" />
       <updated>1522964999205</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added generarSaludo&#10;&#10;*Se completo el metoodo generarSaludo&#10;*Usando LocalDateTime se obtiene la hora local&#10; y asi puedo generar el saludo correspondiente">
+      <created>1523025238758</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1523025238759</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12053000" />
+    <option name="totallyTimeSpent" value="14140000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="795" y="0" width="811" height="866" extended-state="0" />
@@ -578,11 +583,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added methods Tragamoneda&#10;&#10;*Se completaron las funciones de los siguientes metodos&#10;  -iniciarJuego&#10;  -generarRueda&#10;  -desplegarRueda&#10;  -generarPremio&#10; *Cambios en Tragamoneda:&#10;  -Added @Builder &#10;  -Added atributo jugador &#10;  -Added contador de asteriscos &#10;  -variables numRandom ha sido cambiado a un arreglo&#10; *Cambios en Sistema:&#10;  -Build de Tragamoneda&#10;  -inicio de ciclo de juego(iniciarJuego)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added methods Tragamoneda&#10;&#10;*Se completaron las funciones de los siguientes metodos&#10;  -iniciarJuego&#10;  -generarRueda&#10;  -desplegarRueda&#10;  -generarPremio&#10; *Cambios en Tragamoneda:&#10;  -Added @Builder &#10;  -Added atributo jugador &#10;  -Added contador de asteriscos &#10;  -variables numRandom ha sido cambiado a un arreglo&#10; *Cambios en Sistema:&#10;  -Build de Tragamoneda&#10;  -inicio de ciclo de juego(iniciarJuego)" />
+    <MESSAGE value="Added generarSaludo&#10;&#10;*Se completo el metoodo generarSaludo&#10;*Usando LocalDateTime se obtiene la hora local&#10; y asi puedo generar el saludo correspondiente" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added generarSaludo&#10;&#10;*Se completo el metoodo generarSaludo&#10;*Usando LocalDateTime se obtiene la hora local&#10; y asi puedo generar el saludo correspondiente" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="6" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -592,8 +598,6 @@
           <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#generarPremio#0;class#Tragamoneda#0" />
-            <element signature="method#validarInput#0;class#Tragamoneda#0" />
           </folding>
         </state>
       </provider>
@@ -627,15 +631,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
+        <state relative-caret-position="-7">
           <caret line="14" column="74" selection-start-line="14" selection-start-column="74" selection-end-line="14" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Tragamoneda.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2745">
+          <caret line="183" column="66" selection-start-line="183" selection-start-column="66" selection-end-line="183" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Jugador.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
+        <state relative-caret-position="308">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -645,21 +659,8 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/Sistema.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret lean-forward="true" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Tragamoneda.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="195" lean-forward="true" selection-start-line="195" selection-end-line="195" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#generarPremio#0;class#Tragamoneda#0" />
-            <element signature="method#validarInput#0;class#Tragamoneda#0" />
           </folding>
         </state>
       </provider>

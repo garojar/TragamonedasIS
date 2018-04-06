@@ -27,8 +27,4 @@ public class Jugador {
     private int apuesta;
 
 
-
-
-
-
 }

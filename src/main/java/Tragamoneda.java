@@ -16,7 +16,7 @@ import java.util.Scanner;
 public class Tragamoneda {
 
     /**
-     * Atributo que representa cada numero aleatorio a generar de la rueda
+     * Arreglo que representa cada numero aleatorio a generar de la rueda
      */
     private int [] numRandom;
 
@@ -90,12 +90,15 @@ public class Tragamoneda {
     /**
      * Genera numeros aleatorios en cada numero de la rueda (0-9)
      */
-    private void generarRueda(){
+    private void generarRueda() {
+
+        // Se reinicia el premio y el contador de asteriscos
         this.contAst=0;
         this.premio=0;
-        for(int x=0;x<3;x++){
+
+        //se rellena el arreglo con numeros aleatorios
+        for(int x=0;x<3;x++) {
             this.numRandom[x] = (int)(Math.random()*10);
-            System.out.println(x);
         }
     }
 
@@ -103,16 +106,23 @@ public class Tragamoneda {
      * Despliega en consola los numeros aleatorios generados
      * previamente , en caso de que un numRandom sea 0 este lo muestra como un *
      */
-    private void desplegarRueda(){
+    private void desplegarRueda() {
         System.out.println("+---+---+---+");
         System.out.print("| ");
-        for(int i=0 ; i<3 ; i++){
-            if(this.numRandom[i]==0){
+
+        for(int i=0 ; i<3 ; i++) {
+            // el 0 representa un *
+            if(this.numRandom[i]==0) {
+
                 this.contAst++;
                 System.out.print("*");
-            }else{
+
+            }else {
+
                 System.out.print(this.numRandom[i]);
+
             }
+
             System.out.print(" | ");
         }
 
@@ -123,7 +133,7 @@ public class Tragamoneda {
      * Analiza los numRandom generados en busca de un posible premio
      */
     private void generarPremio(){
-
+        // si se encontraron 0 se calcula el premio segun la cantidad
         if(this.contAst>0) {
 
             switch (this.contAst) {
@@ -140,8 +150,11 @@ public class Tragamoneda {
                     break;
 
             }
-        }else if((this.numRandom[0] == this.numRandom[1]) && this.numRandom[0] == this.numRandom[2]){
-                this.premio = this.numRandom[0]*this.jugador.getApuesta();
+        //se busca si existe una triple coincidencia con algun numero
+        }else if (this.numRandom[0] == this.numRandom[1] &&
+                this.numRandom[0] == this.numRandom[2] ) {
+                this.premio =
+                        this.numRandom[0]*this.jugador.getApuesta();
         }
     }
 
@@ -149,9 +162,14 @@ public class Tragamoneda {
      * Obtiene la hora y minuto actual para desplegar el mensaje correcto
      */
     private void generarSaludo(){
+
+        //se obtiene el tiempo actual
         this.hora = LocalDateTime.now();
+
+        //se obtiene la hora
         int hour = this.hora.getHour();
 
+        //analizar rango de horas para desplegar el saludo correspondiente
         if(hour > 5 && hour < 12){
             System.out.print("Buenos dias,");
         }else if(hour > 11 && hour < 20){
@@ -161,16 +179,24 @@ public class Tragamoneda {
         }
     }
 
+    /**
+     * Valida que la apuesta ingresada por el usuario
+     * sea un valor entero , positivo y menor al saldo del jugador
+     * @return valor entero validado que ingreso el usuario
+     */
+    private int validarInput() {
 
-    private int validarInput(){
         Scanner scan =  new Scanner(System.in);
         int num=0;
+
+
         while(true) {
 
             String valor = scan.nextLine();
 
             boolean isNumeric=true;
 
+            //se comprueba que sea un valor numerico
             try {
                 num = Integer.parseInt(valor);
             } catch (NumberFormatException e) {
@@ -178,11 +204,13 @@ public class Tragamoneda {
                 isNumeric = false;
             }
 
-            if(isNumeric && num>jugador.getSaldoDisponible()){
+            //se comprueba que no exceda el saldo disponible
+            //y que no sea negativo
+            if (isNumeric && num>jugador.getSaldoDisponible()) {
                 System.out.println("Saldo Insuficiente, ingrese monto menor");
-            }else if(isNumeric && num<0){
+            }else if (isNumeric && num<0){
                 System.out.println("Ingrese un monto positivo");
-            }else if(isNumeric){
+            }else if (isNumeric) {
                 break;
             }
 
