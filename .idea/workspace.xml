@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e6146213-b94c-4f45-ad65-d7672e16b8a1" name="Default" comment="" />
+    <list default="true" id="e6146213-b94c-4f45-ad65-d7672e16b8a1" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tragamoneda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tragamoneda.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -19,13 +22,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Tragamoneda.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Tragamoneda.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Tragamoneda.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="566">
-              <caret line="37" selection-start-line="37" selection-end-line="37" />
+            <state relative-caret-position="361">
+              <caret line="195" lean-forward="true" selection-start-line="195" selection-end-line="195" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#generarPremio#0;class#Tragamoneda#0" />
+                <element signature="method#validarInput#0;class#Tragamoneda#0" />
               </folding>
             </state>
           </provider>
@@ -34,8 +39,8 @@
       <file leaf-file-name="Sistema.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Sistema.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="46" selection-start-line="3" selection-start-column="46" selection-end-line="3" selection-end-column="46" />
+            <state>
+              <caret lean-forward="true" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -43,11 +48,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Jugador.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Jugador.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Jugador.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
+            <state relative-caret-position="85">
+              <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -69,6 +74,7 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="garojar &lt;german.rojo@alumnos.ucn.cl&gt;" />
         <option value="g" />
       </list>
     </option>
@@ -372,9 +378,9 @@
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/java/SIstema.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Sistema.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/Jugador.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Sistema.java" />
         <option value="$PROJECT_DIR$/src/main/java/Tragamoneda.java" />
       </list>
     </option>
@@ -385,10 +391,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1276" />
-    <option name="width" value="516" />
-    <option name="height" value="146" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1590" />
+    <option name="width" value="1622" />
+    <option name="height" value="1732" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -513,31 +519,40 @@
       <option name="presentableId" value="Default" />
       <updated>1522941569717</updated>
       <workItem from="1522941573452" duration="2773000" />
-      <workItem from="1522944542318" duration="553000" />
+      <workItem from="1522944542318" duration="9280000" />
     </task>
+    <task id="LOCAL-00001" summary="Added methods Tragamoneda&#10;&#10;*Se completaron las funciones de los siguientes metodos&#10;  -iniciarJuego&#10;  -generarRueda&#10;  -desplegarRueda&#10;  -generarPremio&#10; *Cambios en Tragamoneda:&#10;  -Added @Builder &#10;  -Added atributo jugador &#10;  -Added contador de asteriscos &#10;  -variables numRandom ha sido cambiado a un arreglo&#10; *Cambios en Sistema:&#10;  -Build de Tragamoneda&#10;  -inicio de ciclo de juego(iniciarJuego)">
+      <created>1522964999204</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1522964999205</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3326000" />
+    <option name="totallyTimeSpent" value="12053000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1613" height="873" extended-state="7" />
+    <frame x="795" y="0" width="811" height="866" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.3292683" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3292683" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32831737" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3292683" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2527331" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24435592" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="Gradle" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -546,7 +561,6 @@
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.3292683" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Build" order="7" weight="0.3292683" />
@@ -562,9 +576,13 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added methods Tragamoneda&#10;&#10;*Se completaron las funciones de los siguientes metodos&#10;  -iniciarJuego&#10;  -generarRueda&#10;  -desplegarRueda&#10;  -generarPremio&#10; *Cambios en Tragamoneda:&#10;  -Added @Builder &#10;  -Added atributo jugador &#10;  -Added contador de asteriscos &#10;  -variables numRandom ha sido cambiado a un arreglo&#10; *Cambios en Sistema:&#10;  -Build de Tragamoneda&#10;  -inicio de ciclo de juego(iniciarJuego)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added methods Tragamoneda&#10;&#10;*Se completaron las funciones de los siguientes metodos&#10;  -iniciarJuego&#10;  -generarRueda&#10;  -desplegarRueda&#10;  -generarPremio&#10; *Cambios en Tragamoneda:&#10;  -Added @Builder &#10;  -Added atributo jugador &#10;  -Added contador de asteriscos &#10;  -variables numRandom ha sido cambiado a un arreglo&#10; *Cambios en Sistema:&#10;  -Build de Tragamoneda&#10;  -inicio de ciclo de juego(iniciarJuego)" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="3" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -574,6 +592,8 @@
           <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#generarPremio#0;class#Tragamoneda#0" />
+            <element signature="method#validarInput#0;class#Tragamoneda#0" />
           </folding>
         </state>
       </provider>
@@ -612,10 +632,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Tragamoneda.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Jugador.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="566">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        <state relative-caret-position="85">
+          <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -624,20 +644,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Sistema.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="46" selection-start-line="3" selection-start-column="46" selection-end-line="3" selection-end-column="46" />
+        <state>
+          <caret lean-forward="true" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Jugador.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Tragamoneda.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
+        <state relative-caret-position="361">
+          <caret line="195" lean-forward="true" selection-start-line="195" selection-end-line="195" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#generarPremio#0;class#Tragamoneda#0" />
+            <element signature="method#validarInput#0;class#Tragamoneda#0" />
           </folding>
         </state>
       </provider>

@@ -68,6 +68,8 @@ public class Tragamoneda {
 
             jugador.setApuesta(validarInput());
             if(jugador.getApuesta()==0){
+                generarSaludo();
+                System.out.println(" gracias por jugar. Su saldo final es de $"+jugador.getSaldoDisponible());
                 break;
             }else{
                 jugador.setSaldoDisponible(jugador.getSaldoDisponible()-jugador.getApuesta());
@@ -146,7 +148,17 @@ public class Tragamoneda {
     /**
      * Obtiene la hora y minuto actual para desplegar el mensaje correcto
      */
-    private void generarSaludoInicio(){
+    private void generarSaludo(){
+        this.hora = LocalDateTime.now();
+        int hour = this.hora.getHour();
+
+        if(hour > 5 && hour < 12){
+            System.out.print("Buenos dias,");
+        }else if(hour > 11 && hour < 20){
+            System.out.print("Buenas Tardes,");
+        }else{
+            System.out.print("Buenas Noches,");
+        }
     }
 
 
